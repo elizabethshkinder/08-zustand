@@ -1,6 +1,7 @@
 import axios from "axios";
 import type { Note } from "../types/note";
-import type { NoteFormValues } from "../components/NoteForm/NoteForm";
+import type { NoteFormValues } from "@/types/note";
+
 
 interface FetchNotesResponse {
   notes: Note[];

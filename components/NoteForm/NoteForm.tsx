@@ -7,12 +7,8 @@ import { useMutation } from "@tanstack/react-query";
 import { createNote } from "@/lib/api";
 import { useNoteStore } from "@/lib/store/noteStore";
 import type { NoteTag } from "@/types/note";
+import type { NoteFormValues } from "@/types/note";
 
-type NoteFormValues = {
-  title: string;
-  content: string;
-  tag: NoteTag;
-};
 
 export default function NoteForm() {
   const router = useRouter();
